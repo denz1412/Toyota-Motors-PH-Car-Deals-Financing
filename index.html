@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toyota Motors PH – Car Deals & Financing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-logo">
+      <img src="./source/toyota-logo-transparent-toyota-logo-images-9.png" alt="Toyota Logo" />
+    </div>
+    <div class="hero-overlay">
+      <h1>Mabilis. Flexible. Walang Hassle.</h1>
+      <p>Magka-Toyota ka na with Bank Financing, Trade-In, or Cash – Kami na ang bahala sa lahat!</p>
+      <a href="#lead-form" class="cta-btn">Get Pre-Approved Now</a>
+    </div>
+  </section>
+
+  <!-- LEAD FORM SECTION -->
+  <section class="lead-form-section" id="lead-form">
+    <h2>Start My Toyota Journey</h2>
+    <form id="leadForm" class="lead-form">
+      <input type="text" name="fullName" placeholder="Full Name" required />
+
+      <input type="text" name="Location" placeholder="Location" required />
+      
+      <input type="tel" name="contactNumber" placeholder="Contact Number" required />
+      
+      <input type="text" name="model" placeholder="Preferred Toyota Model" required />
+      
+      <select name="paymentOption" required>
+        <option value="">Piliin ang Payment Option</option>
+        <option value="Bank Financing">Bank Financing</option>
+        <option value="Cash">Cash</option>
+        <option value="Trade-In">Trade-In</option>
+        <option value="Transfer of Approval">Transfer of Approval</option>
+      </select>
+    
+      <input type="text" name="tradeIn" placeholder="May Trade-in Car Ka Ba?" />
+      
+      <button type="submit">Drive Your Dream Car Now</button>
+    </form>
+    
+    
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us">
+    <h2>Why Toyota?</h2>
+    <div class="usp-grid">
+      <div>✅ 10+ Years Car Sales Experience</div>
+      <div>✅ All Toyota Models Available</div>
+      <div>✅ Bank Financing & Trade-in Options</div>
+      <div>✅ Fast 24-72hr Approval</div>
+      <div>✅ Direct Toyota PH Dealer</div>
+      <div>✅ Flexible Payment Options</div>
+    </div>
+  </section>
+
+  <!-- VEHICLE SHOWCASE -->
+  <section class="vehicles">
+    <h2>Featured Toyota Models</h2>
+    <div class="vehicle-grid">
+      <div class="card">
+        <img src="./source/vios2.jpg" alt="Toyota Vios"/>
+        <h3>Vios</h3>
+        <p>Fuel-efficient, perfect for city</p>
+      </div>
+      <div class="card">
+        <img src="./source/innova.jpg" alt="Toyota Innova"/>
+        <h3>Innova</h3>
+        <p>Diesel, spacious for family</p>
+      </div>
+      <div class="card">
+        <img src="./source/corolla cross hybrid.jfif" alt="Toyota Hybrid"/>
+        <h3>Corolla Cross Hybrid</h3>
+        <p> Eco-friendly, future-ready</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="steps">
+    <h2>Paano ang Proseso?</h2>
+    <ol>
+      <li>Mag-Inquire Online</li>
+      <li>Makikipag-ugnayan Kami</li>
+      <li>Submit Requirements</li>
+      <li>Pili ng Unit & Terms</li>
+      <li>Release ng Unit – Enjoy!</li>
+    </ol>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>Client Testimonials</h2>
+    <blockquote>“Approved agad! Legit si Agent Ramon!” — Arnel, Pampanga</blockquote>
+    <blockquote>“Trade-in lang, naka-Innova na ako!” — Grace, Quezon City</blockquote>
+  </section>
+
+  <!-- 
+    #<section class="promo-banner">
+    <h3>🔥 JULY PROMO: ₱0 Downpayment OR Up to ₱50K Discount! 🔥</h3>
+    <a href="#lead-form" class="cta-btn">Book My Unit Now</a>
+  </section> 
+    
+  -->
+ 
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <h2>Ready ka na bang magka-Toyota?</h2>
+    <p>Kami na bahala sa buong proseso. Mag-inquire na ngayon!</p>
+    <a href="#lead-form" class="cta-btn">Start Your Journey Now</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>&copy; 2025 Toyota Calamba, Laguna</h3>
+    <p>National Highway 1, Brgy Turbina, Calamba City, Laguna ISO 14001:2015 Certified</p>
+    <p>MarKeting Professional: Mr. San Ramon Caldosa</p>
+    <p>Contact Number: 0993-594-5831</p>
+    <p>Email: sanramoncaldosa@gmail.com</p>
+  </footer>
+
+  <!-- chatbot section -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65caec508d261e1b5f5f7174/1hmgam7ao';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!-- end of chatbot section --> 
+
+<!-- AirTable Section -->
+<script>
+  document.getElementById("leadForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const token = "patvlkLooqz9MT9y4.2a8395096f79094a710867f284655e95fd6b3f71cf55847c9e0952c804c418eb";
+    const baseId = "appk4OdbNJFqLzuW5";
+    const tableName = "clients%20info"; // URL-encoded if name contains spaces
+
+    const data = {
+      records: [
+        {
+          fields: {
+            "Full Name": e.target.fullName.value,
+            "Location": e.target.Location.value,
+            "Contact Number": e.target.contactNumber.value,
+            "Preferred Model": e.target.model.value,
+            "Payment Option": [e.target.paymentOption.value], // <-- FIXED HERE
+            "Trade-In Info": e.target.tradeIn.value,
+          },
+        },
+      ],
+    };
+
+    try {
+      const response = await fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("Lead successfully submitted!");
+        e.target.reset();
+      } else {
+        console.error(result);
+        alert("Submission failed: " + result.error.message);
+      }
+    } catch (err) {
+      console.error(err);
+      alert("An error occurred while submitting the form.");
+    }
+  });
+</script>
+
+
+<!-- end of AirTable Section -->  
+
+
+</body>
+</html>

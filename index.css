@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Generic Section */
+section {
+  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 2rem);
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* Hero Section */
+/* Hero Section */
+/* Hero Logo */
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.hero-logo img {
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+/* Hero Section - Base Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('./source/toyota-corolla-hybrid-sedan.jpg');
+  
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Hero Overlay */
+.hero-overlay {
+  color: #fff;
+  padding: 2rem;
+  max-width: 70%;
+  backdrop-filter: blur(.5px);
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Heading */
+.hero h1 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.5;
+}
+
+/* Hero Paragraph */
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* CTA Button */
+.cta-btn {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Large Desktop (1440px and above) */
+@media (min-width: 1440px) {
+  .hero {
+    min-height: 800px;
+  }
+}
+
+/* Desktop (1024px - 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .hero {
+    min-height: 700px;
+  }
+}
+
+/* Tablet (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    min-height: 500px;
+  }
+  
+  .hero-overlay {
+    padding: 1.5rem;
+    max-width: 85%;
+  }
+
+  
+}
+
+/* Mobile Large (481px - 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero {
+    height: 70vh;
+    min-height: 400px;
+    max-height: 600px;
+    background-size: contain;
+    background-position: center;
+    padding: 0 0.5rem;
+  }
+  
+  .hero-overlay {
+    padding: 1.5rem 1rem;
+    max-width: 95%;
+  }
+  
+  .hero h1 {
+    font-size: clamp(10px, 1.5vw, 10px);
+    margin-bottom: 0.8rem;
+  }
+  
+  .hero p {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    margin-bottom: 1rem;
+  }
+  
+  .cta-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: clamp(0.85rem, 1vw, 0.95rem);
+  }
+}
+
+/* Mobile Medium (376px - 480px) IPhone 14 Pro Max*/
+@media (min-width: 376px) and (max-width: 480px) {
+  .hero {
+    height: 60vh;
+    min-height: 350px;
+    max-height: 500px;
+    background-size: contain;
+    background-position: center;
+    padding: 0 0.5rem;
+  }
+
+  .hero-logo img {
+    max-height: 35px;
+  }
+  
+  
+  .hero-overlay {
+    padding: 1rem 0.8rem;
+    max-width: 98%;
+  }
+  
+  .hero h1 {
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+    margin-bottom: 0.6rem;
+    margin-top: 50px;
+  }
+  
+  .hero p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin-bottom: 0.8rem;
+  }
+  
+  .cta-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    margin-top: 180px;
+  }
+}
+
+/* Mobile Small (320px - 375px)  Samsung Galaxy S8*/
+@media (min-width: 320px) and (max-width: 375px) {
+  .hero {
+    height: 55vh;
+    min-height: 320px;
+    max-height: 450px;
+    background-size: contain;
+    background-position: center;
+    padding: 0 0.25rem;
+  }
+  
+  .hero-logo {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .hero-logo img {
+    max-height: 30px;
+  }
+  
+  .hero-overlay {
+    padding: 0.8rem 0.5rem;
+    max-width: 98%;
+  }
+  
+  .hero h1 {
+    font-size: clamp(10px, 1.0vw, 10px);
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: clamp(0.75rem, 4.5vw, 0.9rem);
+    margin-bottom: 0.6rem;
+  }
+  
+  .cta-btn {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.8rem;
+    margin-top: 120px;
+  }
+}
+
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+  .hero {
+    height: 50vh;
+    min-height: 280px;
+    max-height: 400px;
+    background-size: contain;
+    background-position: center;
+    padding: 0 0.25rem;
+  }
+  
+  .hero-logo {
+    top: 8px;
+    left: 8px;
+  }
+  
+  .hero-logo img {
+    max-height: 30px;
+  }
+  
+  .hero-overlay {
+    padding: 0.6rem 0.4rem;
+    max-width: 98%;
+  }
+  
+  .hero h1 {
+    font-size: clamp(1rem, 8vw, 1.4rem);
+    margin-bottom: 0.4rem;
+  }
+  
+  .hero p {
+    font-size: clamp(0.7rem, 5vw, 0.85rem);
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Landscape Orientation Adjustments */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    height: 100vh;
+    min-height: 300px;
+  }
+  
+  .hero-overlay {
+    padding: 1rem;
+  }
+  
+  .hero h1 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* iPhone specific adjustments */
+@media (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
+
+/* Ensure background image visibility on all mobile devices */
+@media (max-width: 767px) {
+  .hero {
+    background-attachment: scroll;
+  }
+  
+  /* Fallback for devices that don't support contain properly */
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    z-index: -1;
+  }
+}
+
+/* Lead Form */
+.lead-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form button {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.lead-form input:focus,
+.lead-form select:focus {
+  outline: none;
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2);
+}
+
+.lead-form button {
+  background: #d32f2f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lead-form button:hover {
+  background: #b71c1c;
+}
+
+/* Why Us Section */
+.why-us .usp-grid,
+.vehicle-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+}
+
+.why-us .usp-grid div,
+.vehicle-grid .card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.vehicle-grid img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.vehicle-grid h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #d32f2f;
+}
+
+.why-us .usp-grid div:hover,
+.vehicle-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Steps Section */
+.steps ol {
+  list-style: decimal inside;
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+
+.steps li {
+  background: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Testimonials */
+.testimonials blockquote {
+  background: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  border-radius: 6px;
+  font-style: italic;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+/* Promo Banner */
+.promo-banner {
+  background: linear-gradient(135deg, #d32f2f, #b71c1c);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+}
+
+.promo-banner h3 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin-bottom: 1rem;
+}
+
+/* Final CTA */
+.final-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f6f8;
+  padding: 3rem 1rem;
+  margin: 2rem auto;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.final-cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin-bottom: 1rem;
+}
+
+.final-cta p {
+  font-size: 1.125rem;
+  color: #555;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.final-cta .cta-btn {
+  background-color: #e60000;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.final-cta .cta-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero-overlay { padding: 1.5rem; margin: 0 1rem; }
+  .hero h1 { font-size: 1.8rem; }
+  .hero p { font-size: 1rem; }
+  .why-us .usp-grid,
+  .vehicle-grid { grid-template-columns: 1fr; }
+  .lead-form { padding: 0 1rem; }
+  section { padding: 2rem 1rem; }
+  .final-cta h2 { font-size: 1.5rem; }
+  .final-cta p { font-size: 1rem; }
+  .final-cta .cta-btn { font-size: 0.95rem; padding: 0.75rem 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .hero { min-height: 400px; }
+  .hero-overlay { padding: 1rem; }
+  .hero h1 { font-size: 1.5rem; }
+  .hero p { font-size: 0.9rem; }
+  .cta-btn { padding: 0.7rem 1.2rem; font-size: 0.9rem; }
+  .why-us .usp-grid div,
+  .vehicle-grid .card { padding: 1rem; }
+  .steps li { padding: 0.8rem 1rem; }
+  .testimonials blockquote { padding: 1rem; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-overlay { padding: 2.5rem; }
+  .why-us .usp-grid,
+  .vehicle-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1025px) {
+  .hero-overlay { padding: 3rem; }
+  .why-us .usp-grid,
+  .vehicle-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.cta-btn:focus,
+.lead-form button:focus,
+.lead-form input:focus,
+.lead-form select:focus {
+  outline: 2px solid #d32f2f;
+  outline-offset: 2px;
+}
